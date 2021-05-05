@@ -1,0 +1,9 @@
+#hebergement
+{
+    display: flex;
+}
+#activite
+{
+    display: flex;
+    justify-content: space-between;
+}
