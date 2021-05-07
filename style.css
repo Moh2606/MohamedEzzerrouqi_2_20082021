@@ -1,9 +1,43 @@
+#navi
+{
+ font-weight: bold;
+ color: blue; 
+ display: flex;  
+ justify-content: space-between;
+ align-items: flex-end;
+}
+.imagereservia
+{max-width: 60%;
+height: auto;
+}
+
+
 #hebergement
 {
     display: flex;
+    background-color: rgb(216, 216, 216);
+}
+#populaire
+{
+    display: flex;
+    background-color: rgb(216, 216, 216);
 }
 #activite
 {
     display: flex;
     justify-content: space-between;
+}
+
+#foot
+{
+    background-color: rgb(216, 216, 216);
+    font-weight: bold;
+    color: black; 
+    display: flex;  
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.subtitle
+{
+    
 }
