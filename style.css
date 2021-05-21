@@ -1,83 +1,88 @@
-#navigation
-{
- font-weight: bold;
- color : #1a66f3; 
- display: flex;  
- margin-top: auto;
-}
-.filter
-{
-    padding:0;
-    margin:0;
-    list-style-type:none; 
-}
-.rubriquefiltre
-{
-    margin-left:2px;
- float:left;
-}
-.rubriquefiltre 
-{
-    display:block;
-    float:left;   
-    width:100px;
-    background-color:#f8f8f8;
-    color:black;
-    text-decoration:none;
-    text-align:center;
-    padding:5px;
-    border:2px solid;
+#navigation {
+    font-weight: bold;
+    color: #1a66f3;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+header img {
+    max-width: 10%;
+    height: auto;
+}
 
+.filter {
+    display: flex;
+    flex-direction: row;
+}
 
+.filter button {
+    border-radius: 25px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#hebergement
+.hotel
 {
     display: flex;
-    background-color: rgb(216, 216, 216);
+    flex-direction: column;
+    justify-items: self-end;
 }
-#populaire
+
+#hebergement {
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;  
+    background-color: rgb(216, 216, 216);
+    width: 2000px;
+    height: 1000px;
+    border-radius: 20px;
+}
+
+.hotelmarseille img
+{
+width: 200px;
+height: 200px;
+border-radius: 20px;
+}
+
+#populaire {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: rgb(216, 216, 216);
+    width: 500px;
+    height: 1000px;
+    border-radius: 20px;
+}
+
+.hotelpop img
 {
     display: flex;
-    background-color: rgb(216, 216, 216);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
 }
-#activite
+
+.hotelpopprice
 {
+    display: flex;
+    align-content: center ;
+}
+
+#activite {
     display: flex;
     justify-content: space-between;
 }
 
-#foot
-{
+#foot {
     background-color: rgb(216, 216, 216);
     font-weight: bold;
-    color: black; 
-    display: flex;  
+    color: black;
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.subtitle
-{
-    
-}
-
