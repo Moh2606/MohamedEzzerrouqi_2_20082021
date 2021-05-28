@@ -1,19 +1,22 @@
 #navigation {
+    display: flex;
     font-weight: bold;
     color: #1a66f3;
+}
+.NavItems{
+    list-style: none;
     display: flex;
-    justify-content: space-evenly;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between ;
 }
 
 header img {
     max-width: 10%;
-    height: auto;
+    height:auto;
 }
 
 .filter {
@@ -23,7 +26,9 @@ header img {
 
 .filter button {
     border-radius: 25px;
+    color: black;
 }
+
 
 .hotel
 {
@@ -34,19 +39,33 @@ header img {
 
 #hebergement {
     display: flex;
-    align-items: stretch; 
+    flex-direction: column;
+    flex-wrap: wrap; 
     justify-content: space-between;  
     background-color: rgb(216, 216, 216);
-    width: 2000px;
-    height: 1000px;
+    width: 1000px;
+    height: 800px;
     border-radius: 20px;
+}
+.whitesquare
+{
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 4%;
+    border-radius: 10%;
 }
 
 .hotelmarseille img
 {
-width: 200px;
-height: 200px;
+width: 230px;
+height: 150px;
 border-radius: 20px;
+}
+
+.
+{
+    color: blue;
 }
 
 #populaire {
@@ -63,19 +82,35 @@ border-radius: 20px;
 {
     display: flex;
     width: 200px;
-    height: 200px;
+    height: 150px;
     border-radius: 20px;
 }
 
+.PopWhiteSquare
+{
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 4%;
+    border-radius: 10%;
+}
 .hotelpopprice
 {
     display: flex;
-    align-content: center ;
+    font-weight: bold;
 }
+
 
 #activite {
     display: flex;
     justify-content: space-between;
+}
+.picorder{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 600px;
+    height: 300px;
+    border-radius: 50px;
 }
 
 #foot {
@@ -85,4 +120,21 @@ border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.footersubtitle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 90%;
+    color: rgb(130, 130, 133);
 }
