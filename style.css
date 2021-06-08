@@ -3,9 +3,12 @@
     font-weight: bold;
     color: #1a66f3;
 }
-.NavItems{
-    list-style: none;
+.NavItems {
     display: flex;
+    list-style: none;
+}
+.NavItems li{
+    padding: 0 1em;
 }
 
 header {
@@ -21,7 +24,6 @@ header img {
 
 .filter {
     display: flex;
-    flex-direction: row;
 }
 
 .filter button {
@@ -29,22 +31,17 @@ header img {
     color: black;
 }
 
-
 .hotel
 {
-    display: flex;
-    flex-direction: column;
-    justify-items: self-end;
+    display: flex;  
 }
 
 #hebergement {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; 
-    justify-content: space-between;  
+    flex-wrap: wrap;   
     background-color: rgb(216, 216, 216);
-    width: 1000px;
-    height: 800px;
+    width: 100%;
+    height: 5%;
     border-radius: 20px;
 }
 .whitesquare
@@ -56,6 +53,11 @@ header img {
     border-radius: 10%;
 }
 
+#HostItem{
+    display: flex;
+    flex-wrap: wrap;
+  margin: 1%;
+}
 .hotelmarseille img
 {
 width: 230px;
@@ -63,18 +65,13 @@ height: 150px;
 border-radius: 20px;
 }
 
-.
-{
-    color: blue;
-}
-
 #populaire {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     background-color: rgb(216, 216, 216);
-    width: 500px;
-    height: 1000px;
+    width: 50%;
+    height: 70%;
     border-radius: 20px;
 }
 
@@ -103,16 +100,45 @@ border-radius: 20px;
 
 #activite {
     display: flex;
-    justify-content: space-between;
-}
-.picorder{
-    display: flex;
-    flex-direction: column-reverse;
-    width: 600px;
-    height: 300px;
-    border-radius: 50px;
+   justify-content: space-between;
 }
 
+.loisirsmarseille {
+    margin-right: 30%;
+    width: 30%;
+    height: 10%;
+}
+
+.loisirsmarseillebis {
+    margin: 20%;
+    width: 20%;
+    height: -10%;
+    padding: -20%;
+    border-radius: 50%;
+
+}
+.picorder {
+    flex-direction: column-reverse;
+    margin: 5%;
+    width: -50%;
+    height: -45%;
+}
+
+.picorderbis {
+   flex-direction: column;
+    padding: 20%;
+}
+
+.notredamepic {
+    width: 20%;
+    height: 5%;
+}
+
+.parclongchamppic {
+    width: -15%;
+    height: 5%;
+
+}
 #foot {
     background-color: rgb(216, 216, 216);
     font-weight: bold;
