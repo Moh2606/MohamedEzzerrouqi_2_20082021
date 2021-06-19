@@ -24,9 +24,13 @@ header img {
 
 .filter {
     display: flex;
+    align-items: center;
+    margin-top: 0%;
 }
 
 .filter button {
+    display: flex;
+    align-items: center;
     border-radius: 25px;
     color: black;
 }
@@ -38,31 +42,23 @@ header img {
 
 #hebergement {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    justify-content: space-between;   
     background-color: rgb(216, 216, 216);
     width: 100%;
     height: 5%;
     border-radius: 20px;
 }
-.whitesquare
+.hotelmarseille
 {
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     padding: 4%;
     border-radius: 10%;
-}
-
-#HostItem{
-    display: flex;
-    flex-wrap: wrap;
-  margin: 1%;
-}
-.hotelmarseille img
-{
-width: 230px;
-height: 150px;
-border-radius: 20px;
+    width: 20%;
+    height: 10%;
 }
 
 #populaire {
@@ -75,28 +71,14 @@ border-radius: 20px;
     border-radius: 20px;
 }
 
-.hotelpop img
+.hotelpop
 {
     display: flex;
+    flex-direction: column;
     width: 200px;
-    height: 150px;
+    height : 200px;
     border-radius: 20px;
 }
-
-.PopWhiteSquare
-{
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-    padding: 4%;
-    border-radius: 10%;
-}
-.hotelpopprice
-{
-    display: flex;
-    font-weight: bold;
-}
-
 
 #activite {
     display: flex;
@@ -117,35 +99,15 @@ border-radius: 20px;
     border-radius: 50%;
 
 }
-.picorder {
-    flex-direction: column-reverse;
-    margin: 5%;
-    width: -50%;
-    height: -45%;
-}
 
-.picorderbis {
-   flex-direction: column;
-    padding: 20%;
-}
-
-.notredamepic {
-    width: 20%;
-    height: 5%;
-}
-
-.parclongchamppic {
-    width: -15%;
-    height: 5%;
-
-}
-#foot {
+#footer {
     background-color: rgb(216, 216, 216);
     font-weight: bold;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    list-style-type: none
 }
 
 .subtitle{
@@ -153,14 +115,4 @@ border-radius: 20px;
     flex-direction: column;
     text-align: center;
     font-weight: bolder;
-}
-
-.footersubtitle
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style-type: none;
-    font-size: 90%;
-    color: rgb(130, 130, 133);
 }
