@@ -124,9 +124,6 @@ header img {
 {
     display: flex;
 }
-.hostmarseille
-{
-}
 
 .hotel
 {   display: flex;
@@ -160,7 +157,7 @@ header img {
 
 #populaire {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-between;
     background-color: rgb(216, 216, 216);
     width: 50%;
@@ -179,36 +176,38 @@ header img {
 #activite 
 {
     display: flex;
-    flex-direction: row;
-   justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#containactivities 
+{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .activitytitle
 {
     display: flex;
+    font-weight: bold;
+    
 }
 
-.loisirsmarseille 
+.loisirsmarseille
+{
+    display: flex;
+}
+
+.loisirsmarseillebis
 {
     display: flex;
     flex-direction: column;
-    margin: 3em;
-    padding-top: 5em;
-    width: 30%;
-    height: 10%;
 }
+
 
 .loisirsmarseille img
 {
     height: 700px;
-}
-.loisirsmarseillebis 
-{
-   display: flex;
-   padding-top: 8em; 
-   flex-direction: column;
-   justify-content: space-between;
-
 }
 
 #footer {
