@@ -1,5 +1,6 @@
 img
 {
+    width: 100%;
     max-width: 300px;
 }
 
@@ -36,34 +37,58 @@ header img {
     height:auto;
 }
 
+input[type=button]
+{
+    font-weight: bold;
+    border-radius: 0px 25px 25px 0px;
+    padding: 1%;
+    background-color: #2b6fee;
+    color: azure;
+}
+
+input[type=text]
+{
+    padding: 1em;
+}
+
 .sitetitle
 {
-    margin-bottom: 0em;
     font-weight: bold;
-    font-size: larger;  
+    font-size: larger;
+    margin-bottom: 0em; 
 }
 
 .sitesubtitle
 {
-    margin: 0;
+    margin-bottom: 0,5em;
+}
 
+.fa-map-marker-alt
+{
+    background-color: #d7d9df;
+    padding: 1%;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .infoline
 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1em;
+    margin-bottom: 0,5em;
 }
 
 .fa-info-circle
 {
+    display: flex;
+    align-items: center;
     margin-right: 1em;
 }
+
 .filter {
     display: flex;
     align-items: center;
-    margin-top: 0%;
+    margin-right: 1em;
+    font-weight: bold;
 }
 
 .filter button {
@@ -72,46 +97,54 @@ header img {
     border-radius: 25px;
     color: black;
     margin-right: 1em;
+    font-weight: bold;
+    border-color :rgb(216, 216, 216);
 }
 
 .buttonfilter
 { 
     padding: 0,5em;
+    margin-right: 1em;
 }
+
 .fa-money-bill-wave
 {
   color: #1a66f3;
-  background-color: #6b9af1;
-  margin-left: 0em;
+  background-color: #a4c2fa;
   margin-right: 1em;
-  padding: 1mm; 
+  padding: 1mm;
+  margin-left: -6%;
+  border-radius: 80%; 
 }
 
 .fa-child
 {
     color: #1a66f3;
-    background-color: #6b9af1;
-    margin-left: 0em;
-    margin-right: 1em;
-    padding: 1mm; 
+  background-color: #a4c2fa;
+  margin-right: 1em;
+  padding: 1mm;
+  margin-left: -6%;
+  border-radius: 100%; 
   }
 
 .fa-heart
   {
     color: #1a66f3;
-    background-color: #6b9af1;
-    margin-left: 0em;
-    margin-right: 1em;
-    padding: 1mm; 
+  background-color: #a4c2fa;
+  margin-right: 1em;
+  padding: 1mm;
+  margin-left: -6%;
+  border-radius: 80%; 
   }
 
 .fa-dog
   {
     color: #1a66f3;
-    background-color: #6b9af1;
-    margin-left: 0em;
-    margin-right: 1em;
-    padding: 1mm; 
+  background-color: #a4c2fa;
+  margin-right: 1em;
+  padding: 1mm;
+  margin-left: -6%;
+  border-radius: 80%; 
   }
 
 .hotel
@@ -134,15 +167,25 @@ header img {
 
 #hebergement
 {   display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width :68%
+
+}
+
+.fullcontainhost
+{
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 
 }
-.containhost
+.containthost
 {
     display: flex;
-    justify-content: space-between;
+    width: 60%;
+    height: 30%;
     
 }
 .hotelmarseille
@@ -160,7 +203,7 @@ header img {
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(216, 216, 216);
-    width: 50%;
+    width: 28%;
     height: 70%;
     border-radius: 20px;
 }
@@ -180,10 +223,11 @@ header img {
     flex-wrap: wrap;
 }
 
-#containactivities 
+.containactivities 
 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .activitytitle
@@ -193,21 +237,21 @@ header img {
     
 }
 
-.loisirsmarseille
-{
-    display: flex;
-}
-
-.loisirsmarseillebis
+.loisirsmarseille,
+.loisirsmarseillebis 
 {
     display: flex;
     flex-direction: column;
+    width: 24%;
+    height: 10%;
+    font-weight: bold;
 }
 
-
-.loisirsmarseille img
+.loisirsmarseille,
+.loisirsmarseillebis div 
 {
-    height: 700px;
+    border: 1px solid black;
+    border-radius: 25px; 
 }
 
 #footer {
