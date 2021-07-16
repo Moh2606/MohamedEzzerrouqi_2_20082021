@@ -15,6 +15,7 @@ body
     display: flex;
     font-weight: bold;
     color: #1a66f3;
+    cursor: pointer;
 }
 
 .NavItems {
@@ -151,20 +152,17 @@ input[type=text]
   border-radius: 80%; 
   }
 
-.hotel
+.hostmarseille
 {
-    display: flex;
-    flex-direction: row;
-}
-
-.displaymore
-{
-    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: x-large;
 }
 
 .hotel
 {   display: flex;
-    flex-wrap: wrap;   
+    flex-direction: row;
+    justify-content: space-between;   
     background-color: rgb(216, 216, 216);
     border-radius: 20px;
 }
@@ -174,52 +172,136 @@ input[type=text]
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    width :68%
-
+    width : 68%;
 }
 
 .fullcontainhost
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-between;
+    padding: 5%;
 }
+
 .containthost
 {
     display: flex;
-    width: 60%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
     height: 30%;
-    
-}
-.hotelmarseille
-{
-    display: flex;
     background-color: white;
-    padding: 4%;
     border-radius: 10%;
-    width: 20%;
-    height: 10%;
+    box-shadow: 10px 10px 15px grey;
 }
 
-#populaire {
+.containthost img
+{
+  width: 96%;
+  height: 55%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  border-radius: 10% 10% 0% 0%; 
+  object-fit: cover;
+}
+
+.titlehotel
+{
+    margin-top: 2%;
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: large;
+}
+
+.pricehotel
+{
+    margin-top: -5%;
+    padding-left: 4%;
+    font-size: medium;
+}
+
+.stars
+{
+    color: #1a66f3;
+    font-size: small;
+    margin-top: -5%;
+    padding-left: 4%;
+}
+
+.displaymore
+{
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#populaire 
+{
     display: flex;
     flex-direction: column;
+    width :30%;
+}
+
+.fullcontainhostpop
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(216, 216, 216);
-    width: 28%;
-    height: 70%;
-    border-radius: 20px;
+    padding: 5%;
+    margin-top: 6%;
+
+}
+
+.fullcontainhostpop img
+{
+width: 50%;
+  height: 90%;
+  border-radius: 10% 0% 0% 10%; 
+  object-fit: cover;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
 }
 
 .hotelpop
 {
     display: flex;
-    width: 200px;
-    height : 200px;
-    border-radius: 20px;
+    flex-direction: row;
+    width: 95%;
+    height: 30%;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 15px grey;
 }
 
+.pop
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 5%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.mostpop
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 12%;
+    font-size: x-large;
+
+}
+
+.fa-chart-line
+{
+    margin-left: 35%;
+}
 #activite 
 {
     display: flex;
@@ -238,24 +320,63 @@ input[type=text]
 {
     display: flex;
     font-weight: bold;
-    
+    font-size: x-large; 
+    margin-top: 5%; 
 }
 
-.loisirsmarseille,
-.loisirsmarseillebis 
+.loisirsmarseille img
+{
+    height: 90%;
+    border-radius: 5% 5% 0% 0%;
+}
+.loisirsmarseillebis img
+{
+width: 100%;
+height: 80%;
+border-radius: 10% 10% 0% 0%;
+}
+
+.loisirsmarseille
 {
     display: flex;
     flex-direction: column;
-    width: 24%;
-    height: 10%;
     font-weight: bold;
+    margin-top: 3%;
 }
 
-.loisirsmarseille,
+.loisirsmarseillebis
+{
+    display : flex;
+    flex-direction : column;
+    font-weight : bold;
+    margin-top: 3%;  
+}
+
+.margemarseillebis
+{
+    margin-bottom: 10%;
+}
+
+.act 
+{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.loisirsmarseille div 
+{
+    border: 1px solid rgb(240, 234, 234);
+    border-radius: 25px; 
+    height: 64%;
+    box-shadow: 0em 0em 1em rgb(216, 214, 214)
+}
+
 .loisirsmarseillebis div 
 {
-    border: 1px solid black;
+    border: 1px solid rgb(240, 234, 234);
     border-radius: 25px; 
+    height: 30%;
+    box-shadow: 0em 0em 1em rgb(216, 214, 214);
+    object-fit: cover;
 }
 
 #footer {
@@ -271,8 +392,8 @@ ul
     list-style: none;
 }
     
-
-.subtitle{
+.subtitle
+{
     display: flex;
     flex-direction: column;
     text-align: center;
