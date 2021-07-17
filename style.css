@@ -302,23 +302,25 @@ width: 50%;
 {
     margin-left: 35%;
 }
+
 #activite 
 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .containactivities 
 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.containactivities>div
+{
+
 }
 
 .activitytitle
 {
-    display: flex;
     font-weight: bold;
     font-size: x-large; 
     margin-top: 5%; 
@@ -326,14 +328,16 @@ width: 50%;
 
 .loisirsmarseille img
 {
-    height: 90%;
+    height: 100%;
     border-radius: 5% 5% 0% 0%;
+    object-fit: cover;
+    
 }
 .loisirsmarseillebis img
 {
-width: 100%;
-height: 80%;
-border-radius: 10% 10% 0% 0%;
+    height: 100%;
+    border-radius: 10% 10% 0% 0%;
+    object-fit: cover;
 }
 
 .loisirsmarseille
@@ -376,7 +380,6 @@ border-radius: 10% 10% 0% 0%;
     border-radius: 25px; 
     height: 30%;
     box-shadow: 0em 0em 1em rgb(216, 214, 214);
-    object-fit: cover;
 }
 
 #footer {
