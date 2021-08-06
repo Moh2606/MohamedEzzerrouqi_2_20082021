@@ -28,6 +28,7 @@ ul, li
 .NavItems {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .NavItems ul
@@ -186,7 +187,7 @@ hebergement
 .fullcontainhost{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
 }
 .containthost{
@@ -195,6 +196,7 @@ hebergement
     display: flex;
     flex-direction: column;
     width: 30%;
+    margin-bottom: 1em;
 }
 
 .containthost img{
@@ -254,7 +256,7 @@ hebergement
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6%;
+    padding-top: 1.5em;
 }
 .hotelpop{
     display: flex;
@@ -262,7 +264,9 @@ hebergement
     height: 150px;
     background-color: white;
     border-radius: 25px;
+    margin-bottom: 2em;
 }
+
 .hotelpop img{
     width: 45%;
     height: 140px;
@@ -287,9 +291,14 @@ hebergement
 
 .stars
 {
-    margin-top: 50px;
+    margin-top: 5px;
     margin-left: 15px;
     color: #2b3fee;
+}
+
+.hotelpop .stars
+{
+    margin-top: 50px;
 }
 /*
 activite
@@ -305,7 +314,7 @@ activite
 }
 .containactivities{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .containactivities img{
     width: 100%;
@@ -313,12 +322,13 @@ activite
     object-fit: cover;
 }
 .loisirsmarseillebis{
-    height: 380px; 
+    height: 450px; 
+    width: 350px;
 }
 
 .loisirsmarseille
 {
-    height: 380px;
+    height: 450px;
 }
 
 
@@ -326,12 +336,14 @@ activite
 {
     object-fit: cover; 
     border-radius: 25px 25px 0px 0px;
+    height: 400px;
 }
 
 .loisirsmarseillebis img
 {
     object-fit: cover; 
     border-radius: 25px 25px 0px 0px;
+    height: 450px;
 }
 .loisirsmarseillebis{
     display: flex;
@@ -356,24 +368,32 @@ activite
 .act
 {
     font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20px;
+    margin-top: 0px;
+    margin-left: 15px;
 }
 
-.loisirsmarseillebis div:nth-child(1){
-    height: 30%;
-}
-
-.loisirsmarseillebis div:nth-child(1) img{
-    height: 150px;
-    width: 250px;
-}
 .loisirsmarseillebis div:nth-child(2){
-    height: 55%;
+    height: 40%;
 }
+
 .loisirsmarseillebis div:nth-child(2) img{
-    height: 150px;
-    width: 250px;
+    height: 130px;
+}
+.loisirsmarseillebis div:nth-child(1){
+    height: 50%;
+}
+.loisirsmarseillebis div:nth-child(1) img{
+    height: 170px;
+}
+
+.lastContainer div.margemarseillebis
+{
+    height: 60%;
+}
+
+.lastContainer div.margemarseillebis img
+{
+    height: 170px;
 }
 /*
 footer
@@ -410,8 +430,8 @@ footer{
     {
         position: absolute;
         top: 0px;
-        right: 400px;
-
+        margin-left: 50px;
+        margin-top: 20px;
     }
 
     nav 
@@ -425,7 +445,9 @@ footer{
         width: 100%;
         padding: 0;
         margin: 0;
+        margin-top: 20px;
         align-items: flex-end;
+        font-size: larger;
     }
     .NavItems ul 
     { 
@@ -436,12 +458,41 @@ footer{
     {
         width: 50%;
         text-align: center;
+        margin-top: 50px;
+        font-size: larger;
     }
 
+    .sitetitle, .sitesubtitle, .searchfield
+    {
+        margin-left: 20px;
+    }
+
+    .sitetitle
+    {
+        margin-top: 40px;
+    }
+
+    .buttonfilter
+    {
+        margin-left: 20px;
+    }
     .filter
     {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .filter button
+    {
+        margin-top: 20px;
+    }
+
+    .infoline
+    {
+        margin-left: 20px;
     }
 
     .hotel
@@ -450,11 +501,31 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
+    #hebergement
+    {
+        width: 100%;
+        background-color: white;
+    }
     .fullcontainhost
     {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .containthost
+    {
+        width: 90%;
+        border-style: solid;
+        border-color: rgb(247, 247, 247);
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    #populaire
+    {
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
     }
 
     .containactivities
@@ -464,9 +535,94 @@ footer{
         align-items: center;
     }
 
+    .loisirsmarseille
+    {
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    .loisirsmarseillebis
+    {
+        margin-bottom: 2em;
+    }
+
     #footer
     {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+}
+
+@media (max-width : 1024px) 
+{
+    header {
+        position: relative;
+    }
+
+    header img 
+    {
+        position: absolute;
+        top: 0px;
+    }
+
+    #search
+    {
+        margin-left: 15px;
+    }
+
+    .fullcontainhost
+    {
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    .containthost
+    {
+        height: 30%;
+        width: 40%;
+        margin-bottom: 50px;
+    }
+
+    .containthost img
+    {
+        margin-top: -1em;
+    }
+
+    .hotelpop
+    {
+        width: 100%;
+        height: 40%;
+    }
+
+    .hotelpop img 
+    {
+        height: 150px;
+    }
+
+    .pop
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loisirsmarseillebis div:nth-child(2) {
+        height: 46%;
+    }
+
+    .loisirsmarseillebis div:nth-child(2) img {
+        height: 150px;
+    }
+
+    .lastContainer div.margemarseillebis {
+        height: 47%;
+    }
+
+    .loisirsmarseillebis div:nth-child(1) {
+        height: 47%;
+    }
+
+
+
+
+}
